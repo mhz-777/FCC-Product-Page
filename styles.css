@@ -76,3 +76,48 @@ select {
 }
 
 /* PICCALIL MODERN CSS RESET END  */
+
+/* Start of my CSS */
+
+/* importing local font */
+@font-face {
+  font-family: Cheapsman;
+  src: url(/fonts/Cheapsman\ Slant.ttf);
+}
+
+:root {
+
+  /* fonts */
+  --ff-main: 'Cheapsman', serif;
+
+  /* custom colours */
+  --gold: #f3e031;
+
+}
+
+/* All values from FIGMA file */
+
+body {
+  display: flex; /* enables flex content for its children */
+  align-items: center;
+  flex-direction: column;
+}
+
+#header {
+
+  
+  height: 3.875rem;
+  width: 100%;
+  background-color: black;
+}
+
+#nav-bar {
+  
+  
+}
+
+#header-img {
+  width: 2.313rem;  
+  height: 2.063rem;
+}
+
