@@ -89,35 +89,81 @@ select {
 
   /* fonts */
   --ff-main: 'Cheapsman', serif;
+  --font-weight-primary: 400;
 
   /* custom colours */
   --gold: #f3e031;
 
 }
 
+
 /* All values from FIGMA file */
 
 body {
-  display: flex; /* enables flex content for its children */
-  align-items: center;
-  flex-direction: column;
+  font-family: var(--ff-main);
 }
 
-#header {
 
-  
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 3.875rem;
   width: 100%;
   background-color: black;
-}
-
-#nav-bar {
-  
-  
+  color: white;
 }
 
 #header-img {
-  width: 2.313rem;  
-  height: 2.063rem;
+  width: 10.8rem;  
+  height: 2.625rem;
+
+}
+
+#nav-bar {
+  visibility: hidden; /* hides the nav links on mobile */
+  
+}
+
+.mobileNav {
+  margin-right: 1.188rem;
+  background: url(/images/hamburger.svg.png);
+  background-size: contain;
+  border: 0;
+  width: 32px;
+  height: 32px;
+  
+}
+
+.styling-divider {
+  background-color: var(--gold);
+  position: absolute;
+  height: 14px;
+  width: 100%;
+}
+
+
+/* container styling */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
+
+/* desktop styling */
+
+@media screen and (min-width: 50em) {
+  #nav-bar {
+    visibility: visible;
+  }
+
+  .mobileNav {
+    visibility: hidden;
+  }
+  
 }
 
