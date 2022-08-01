@@ -120,20 +120,52 @@ body {
 
 }
 
+/* MOBILE NAV STYLING START */
+
 #nav-bar {
-  visibility: hidden; /* hides the nav links on mobile */
-  
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background-color: var(--gold);
 }
 
-.mobileNav {
+#nav-bar #nav-links {
+  display: none; /* hiding links on mobile*/
+  padding: 0;
+}
+
+#nav-bar a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem 0 1rem;
+}
+
+#nav-bar li {
+  list-style: none;
+}
+
+
+.mobileNav { /* clickable button for mobile nav */
   margin-right: 1.188rem;
   background: url(/images/hamburger.svg.png);
   background-size: contain;
   border: 0;
   width: 32px;
   height: 32px;
-  
+  cursor: pointer;
 }
+
+
+
+
+/* MOBILE NAV STYLING END */
 
 .styling-divider {
   background-color: var(--gold);
