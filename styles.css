@@ -124,6 +124,8 @@ h1 {
   width: 100%;
   background-color: black;
   color: white;
+  position: sticky;
+  top: 0px;
 }
 
 #header-img {
@@ -181,7 +183,8 @@ h1 {
 
 .styling-divider {
   background-color: var(--gold);
-  position: absolute;
+  position: sticky;
+  top: 62px;
   height: 14px;
   width: 100%;
 }
