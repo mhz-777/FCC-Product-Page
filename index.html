@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="styles.css">  
     <script src="mobilenav.js"></script>
     <title>FCC-Commencal-Bikes</title>
@@ -17,7 +20,6 @@
                 <li><a href="#hero" class="nav-link">Models</a></li>
                 <li><a href="#notify" class="nav-link">Notify</a></li>
                 <li><a href="#media" class="nav-link">Media</a></li>
-
             </ul>
         </nav>
         <button class="mobileNav" onclick="showNav()"></button>
@@ -27,18 +29,24 @@
         <div class="container">
             <section class="hero" id="hero">
                 <h1>NEW COMMENCAL META SX</h1>
-                <button>View Models</button>
+                <button class="view-button">View Models</button>
             </section>
             <section class="notify" id="notify">
-                <h1>SIGN UP TO BE NOTIFIED ON LAUNCH DAY!</h1>
+                <h1>Join our newsletter</h1>
+                <p>enter your email below and we'll make sure to send you the latest and greatest COMMENCAL content.</p>
                 <form action="https://www.freecodecamp.com/email-submit" id="form">
-                    <input type="email" name="email" id="email" placeholder="Enter your email address here!">
-                    <input type="submit" id="submit" value="Notify Me">
+                    <div class="form-section">
+                        <input type="email" name="email" id="email" placeholder="Enter your email address here!">
+                    </div>
+                    <div class="form-section">
+                        <input type="submit" id="submit" value="Submit">
+                    </div>
                 </form>
             </section>
             <section class="media" id="media">
                 <h1>MEDIA</h1>
-                <iframe id="video" width="428" height="315" src="https://www.youtube.com/embed/tdhRCjNw9mo" frameborder="0" allowfullscreen></iframe>
+                <p>for a chance to be featured next week, send us your creations <a href="#">here!</a></p>
+                <iframe id="video" src="https://www.youtube.com/embed/tdhRCjNw9mo" frameborder="0" allowfullscreen></iframe>
             </section>
         </div>
     </main>
