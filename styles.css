@@ -90,10 +90,11 @@ select {
   /* fonts */
   --ff-main: 'Cheapsman', serif;
   --font-weight-primary: 400;
+  --ff-sub: 'Oswald', sans-serif;
 
   /* custom colours */
   --gold: #f3e031;
-
+  --accentpink: #fa0aff;
 }
 
 
@@ -101,8 +102,19 @@ select {
 
 body {
   font-family: var(--ff-main);
+  background-color: #DBFCDA;
+  overflow: scroll;
 }
 
+
+/* MOBILE NAV STYLING START */
+
+h1 {
+  font-family: var(--ff-main);
+  font-weight: var(--font-weight-primary);
+  font-style: normal;
+  font-size: 2.25em;
+}
 
 #header {
   display: flex;
@@ -120,7 +132,7 @@ body {
 
 }
 
-/* MOBILE NAV STYLING START */
+
 
 #nav-bar {
   display: flex;
@@ -134,7 +146,7 @@ body {
 }
 
 #nav-bar #nav-links {
-  display: none; /* hiding links on mobile*/
+  display: none; /* hiding links*/
   padding: 0;
 }
 
@@ -186,13 +198,20 @@ body {
 
 /* MAIN CONTAINER STYLING END */
 
+
+
+
+
+
+
 /* HERO SECTION STYLING START */
+
 .hero {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  height: 35.5%;
+  height: 35.5vh;
   padding-top: 1rem;
   background-image: url(/images/FCC-HEROIMAGE.jpg);
   background-size: cover;
@@ -203,14 +222,115 @@ body {
 
 .view-button {
   cursor: pointer;
-  
+  margin-top: auto;
+  margin-bottom: 1rem;
+  background-color: var(--accentpink);
+  color: white;
+  border: none;
+  width: 137px;
+  height: 38px;
 }
 
 /* HERO SECTION STYLING END */
 
+
+
+
+
+
+
 /* NOTIFY SECTION STYLING START */
 
+.notify {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: white;
+  width: 100%;
+  line-height: 2.475em;
+  text-align: center;
+}
+
+.notify h1 {
+  padding-top: 0.3rem;
+  color: var(--gold);
+}
+
+.notify p {
+  font-family: var(--ff-sub);
+  line-height: normal;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+.form-section {
+  padding: 0.3rem;
+}
+
+#email {
+  height: 31px;
+  width: 312px;
+}
+
+#submit {
+  background-color: var(--gold);
+  border: none;
+  padding-bottom: 2px;
+  cursor: pointer;
+}
+
+::placeholder {
+  text-align: center;
+}
+
+
+
 /* NOTIFY SECTION STYLING END */
+
+
+
+
+/* MEDIA SECTION STYLING START */
+
+.media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #DBFCDA;
+  height: 39vh;
+}
+
+.media p {
+  font-family: var(--ff-sub);
+  font-size: 20px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 0.5rem;
+}
+
+#video {
+  display: block;
+  width: 95%;
+  height: 95%;
+}
+
+.media a {
+  text-decoration: none;
+  color: var(--accentpink);
+}
+
+
+
+/* MEDIA SECTION STYLING END */
+
+
+
+
+
+
+
 
 /* DESKTOP STYLING */
 
