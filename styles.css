@@ -95,6 +95,7 @@ select {
   /* custom colours */
   --gold: #f3e031;
   --accentpink: #fa0aff;
+  --accentblue: #72fff7;
 }
 
 
@@ -102,7 +103,6 @@ select {
 
 body {
   font-family: var(--ff-main);
-  background-color: #DBFCDA;
   overflow: scroll;
 }
 
@@ -124,8 +124,8 @@ h1 {
   width: 100%;
   background-color: black;
   color: white;
-  position: sticky;
-  top: 0px;
+  position: fixed; /* changed to fixed instead of sticky to pass user-story on FCC */
+  top: 0;
 }
 
 #header-img {
@@ -133,7 +133,6 @@ h1 {
   height: 2.625rem;
 
 }
-
 
 
 #nav-bar {
@@ -197,6 +196,8 @@ h1 {
 .container {
   width: 100vw;
   height: 100vh;
+  /* allows for no clipping between sticky header and hero title */
+  padding-top: 3.75rem; 
 }
 
 /* MAIN CONTAINER STYLING END */
@@ -209,13 +210,18 @@ h1 {
 
 /* HERO SECTION STYLING START */
 
+.view-models-desktop {
+  /* hiding desktop styling*/
+  display: none;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100vw;
   height: 35.5vh;
-  padding-top: 1rem;
+  padding-top: 0.1rem;
   background-image: url(/images/FCC-HEROIMAGE.jpg);
   background-size: cover;
   background-position: center;
@@ -300,9 +306,12 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: white;
   text-align: center;
-  background-color: #DBFCDA;
-  height: 39vh;
+  background-image: url(/images/media-section-background.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 45vh;
 }
 
 .media p {
@@ -315,8 +324,9 @@ h1 {
 
 #video {
   display: block;
-  width: 95%;
-  height: 95%;
+  width: 75%;
+  height: 100%;
+  padding-bottom: 20px;
 }
 
 .media a {
@@ -338,13 +348,94 @@ h1 {
 /* DESKTOP STYLING */
 
 @media screen and (min-width: 50em) {
-  #nav-bar {
-    visibility: visible;
+ 
+  /* hide hamburger menu on desktop */
+  .mobileNav {
+    display: none;
   }
 
-  .mobileNav {
-    visibility: hidden;
+  .container {
+    width: 100vw;
+    height: 100%;
+  }
+
+
+  
+  /* HEADER STYLING START */
+
+  #nav-bar {
+    all: initial;
+    
+  }
+
+  #nav-bar #nav-links {
+    display: flex;
+    padding-right: 3.56rem;
+  }
+
+  #nav-links li {
+    padding: 20px;
+    font-family: var(--ff-main);
+  }
+
+  /* HEADER STYLING END */
+
+
+
+
+
+  /* HERO STYLING START */
+
+  
+  /*styling for hero section header */
+  
+  /* header text colors */
+  .new {
+    color: var(--gold);
+  }
+
+  .model {
+    color: var(--accentblue);
+  }
+
+  /* header text font-size */
+  .hero h1 {
+    font-size: 60px;
+  }
+
+
+  /* hiding button on desktop */
+  .view-button {
+    display: none;
+  }
+
+  
+
+  /* display explore model link */
+
+  .view-models-desktop {
+    display: block;
+    margin-top: auto;
+    margin-bottom: 2.9rem;
+    font-family: var(--ff-sub);
+    font-size: 2rem
+  }
+
+  .desktop-model-link {
+    text-decoration: underline;
+    color: var(--gold);
+
+  }
+
+
+  .hero {
+    height: 90vh;
+  }
+
+  #video {
+    padding-bottom: 40px;
   }
   
+ 
 }
 
