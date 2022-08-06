@@ -6,7 +6,7 @@ Goal:
 
 Demo:
 
-  *  I don't have CODEPEN pro so I can't import local fonts and images, therefore here are some screenshots of the website at the time of commit (I do plan on changing/touching up some particularily rough parts but for now I am moving on): 
+  *  I don't have CODEPEN PRO so I am hosting the website on NETLIFY here is the link: https://jazzy-lily-1fb2fa.netlify.app/
 
   * Mobile:
     ![Mobile Screenshot](/images/FCC-Product-Page-Mobile-SS.png)
