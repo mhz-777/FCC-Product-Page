@@ -6,12 +6,20 @@ Goal:
 
 Demo:
 
-  *  Follow this link to view the current state of my project: -
+  *  I don't have CODEPEN pro so I can't import local fonts and images, therefore here are some screenshots of the website at the time of commit (I do plan on changing/touching up some particularily rough parts but for now I am moving on): 
+
+  * Mobile:
+    ![Mobile Screenshot](/images/FCC-Product-Page-Mobile-SS.png)
+
+  * Desktop:
+    ![Desktop Screenshot](/images/FCC-Product-Page-Desktop-SS.png)
+  
 
 Skills Used:
 
   *  HTML5
   *  CSS
+  *  JS 
 
 Project Specifications:
 
@@ -33,4 +41,15 @@ Project Specifications:
 
 Challenges Faced:
 
+ *   making the site look decent was a big challenge in FIGMA (design is definitely not my strong point i can tell >_< )
+ *   creating a separate responsive navbar on mobile took a minute for sure
+ *   changing my mind in terms of styling over and over again
+ *   organization issues in the stylesheet, strongly considering making multiple CSS files in future projects
+ *   adding meaningful comments in the code, if i come back in a few months alot of things will probably not make sense
+
 New Things Learned:
+
+*    basic introduction into javascript for mobile hamburger menu
+*    mobile first design
+*    more indepth look into media queries
+*    importing local fonts
